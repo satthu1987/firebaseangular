@@ -1,0 +1,16 @@
+<div class="loading-section" *ngIf="!item">
+    <div class="loader">
+      Loading...
+    </div>
+  </div>
+  <div *ngIf="item">
+    <div class="item-laptop">
+        <p> 
+            {{item.EmployeeNo}}
+          <span class="domain">{{item.Name}}</span><br />
+          <span class="domain">{{item.Department}}</span><br />
+          <span class="domain">{{item.EmployeeEmail}}</span><br />
+          <span class="domain">{{item.EmployeeManagerName}}</span><br />
+        </p>
+    </div>
+  </div>
